@@ -168,6 +168,7 @@ class _HomePageState extends State<HomePage> {
   Widget _descriptionCardWidget(String description) {
     RegExp exp = RegExp(r"<[^>]*>", multiLine: true, caseSensitive: true);
     String descriptionNoHTMLTags = description.replaceAll(exp, ' ');
+
     return Container(
       height: deviceHeight! * 0.45,
       width: deviceWidth! * 0.90,
